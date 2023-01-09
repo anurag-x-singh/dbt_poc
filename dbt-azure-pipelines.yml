@@ -30,6 +30,7 @@ steps:
 - script: |
     pip install dbt-snowflake --user
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
-    dbt test
+    dbt deps
     dbt run
+    dbt test
   displayName: 'Test and Run'
