@@ -28,8 +28,8 @@ steps:
   displayName: Installing Profile for Snowflake
     
 - script: |
-    pip install dbt --user
+    pip install dbt-snowflake --user
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
     dbt test
     dbt run
-  displayName: 'Compile, Test, and Run'
+  displayName: 'Test and Run'
