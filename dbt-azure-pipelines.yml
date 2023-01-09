@@ -30,7 +30,6 @@ steps:
 - script: |
     pip install dbt --user
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
-    dbt compile
     dbt test
     dbt run
   displayName: 'Compile, Test, and Run'
