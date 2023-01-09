@@ -1,5 +1,4 @@
 dbt_poc:
-  target: dev
   outputs:
     dev:
       account: st01755.east-us-2.azure
@@ -11,3 +10,4 @@ dbt_poc:
       type: snowflake
       user: AX021
       warehouse: transforming
+  target: dev
